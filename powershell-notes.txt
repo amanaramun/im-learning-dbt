@@ -1,0 +1,7 @@
+pyhton3 -m venv .venv
+.venv\Script\activate
+
+dbt init <project name>
+
+ creating a new file in powershell
+ New-item -Path "./generate_schema_name.sql" -ItemType File
