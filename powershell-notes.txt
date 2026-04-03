@@ -9,3 +9,6 @@ dbt init <project name>
  duckdb -ui dlnerds_store.duckdb
 
  dbt run --select <something.sql>
+
+ dbt run --select tag:<tag>
+ dbt compile  --select <somthing.sql>

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: country_cleaned
+    description: Cleaned country mapping
+    columns:
+      - name: country_code
+        description: ISO code of the country
+        data_type: STRING
+
+      - name: country_name
+        description: Full name of the country
+        data_type: STRING

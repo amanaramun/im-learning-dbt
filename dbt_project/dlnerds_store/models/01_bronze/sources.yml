@@ -10,5 +10,6 @@ sources:
       - name: sales_raw
         loaded_at_field: updated_at
         freshness:
-          warn_after: {count: 1, period: day}
+            warn_after: {count: 1, period: day}
+            error_after: {count: 2, period: day}
       - name: country_raw

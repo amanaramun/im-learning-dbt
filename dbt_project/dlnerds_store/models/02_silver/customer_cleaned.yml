@@ -10,7 +10,10 @@ models:
       - name: id
         description: Unique identifier for the customer
         data_type: STRING
-    
+        data_tests:
+          - unique
+          - not_null
+
       - name: name
         description: Full name of the customer
         data_type: STRING

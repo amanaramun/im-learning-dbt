@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: product_cleaned
+    description: Cleaned product data
+    columns:
+      - name: id
+        description: Unique identifier for the product
+        data_type: STRING
+
+      - name: name
+        description: Name of the product
+        data_type: STRING
+
+      - name: code
+        description: Internal code of the product
+        data_type: STRING
+
+      - name: category
+        description: Category of the product
+        data_type: STRING
+        data_tests:
+          - accepted_values:
+              values:
+                - T-Shirt
+                - Hoodie
+                - Short
+                - Socks
+                - Jacket
+                - Accessories
+
+      - name: price
+        description: Price of the product
+        data_type: FLOAT
+
+      - name: currency
+        description: Currency code of the price
+        data_type: STRING
+
+      - name: color
+        description: Color of the product
+        data_type: STRING
+
+      - name: created_at
+        description: Creation time
+        data_type: TIMESTAMP
+
+      - name: updated_at
+        description: Last update time
+        data_type: TIMESTAMP
