@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: file_system
+    database: dlnerds_store
+    schema: 01_bronze
+    tables:
+      - name: customer_raw
+      - name: product_raw
+      - name: sales_raw
+        loaded_at_field: updated_at
+        freshness:
+          warn_after: {count: 1, period: day}
+      - name: country_raw

@@ -5,3 +5,7 @@ dbt init <project name>
 
  creating a new file in powershell
  New-item -Path "./generate_schema_name.sql" -ItemType File
+
+ duckdb -ui dlnerds_store.duckdb
+
+ dbt run --select <something.sql>
