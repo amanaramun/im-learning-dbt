@@ -28,24 +28,23 @@
 
 ### jinja 
 
-`{{ source('source_name','table_name') }}` source() function is used to refrence raw data sources defiend in a .yml
-`{{ ref("model_name") }}` ref() function is used to refrence other dbt models within your project
-`{{ %...% }}` for logic and flow control, write loops or use conditions
-`{{ ... }}` resolvoes to a value directly into SQL think of sas macros
-`{{ #... # }}` comments
+- `{{ source('source_name','table_name') }}` source() function is used to refrence raw data sources defiend in a .yml
+- `{{ ref("model_name") }}` ref() function is used to refrence other dbt models within your project
+- `{{ %...% }}` for logic and flow control, write loops or use conditions
+- `{{ ... }}` resolvoes to a value directly into SQL think of sas macros
+- `{{ #... # }}` comments
 
-    ``` 
+
     {{% macro name(args) %}}
         {{ do something}}
     {{ %endmacro% }}    
-    ``` 
+
 
 ### misc. remindesr
 dummy clean up your sql.
 sql statments in CAPS
 
-    ``` 
+
     SELECT
         blah
     FROM source
-    ```
