@@ -39,8 +39,8 @@ models:
         node_color: 'silver'
     03_gold:
       +enabled: true
-      +materialized: table
+      +materialized: view
       +schema: 03_gold
-      +tags: ['silgoldver']
+      +tags: ['gold']
       +docs:
         node_color: 'gold'

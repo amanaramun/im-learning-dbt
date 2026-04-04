@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: fact_sales
+    description: Business-ready sales data
+    columns:
+      - name: id
+        description: Unique identifier for the sales record
+        data_type: STRING
+
+      - name: customer_id
+        description: Identifier of the customer
+        data_type: STRING
+        data_tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: id
+
+      - name: product_id
+        description: Identifier of the product
+        data_type: STRING
+        data_tests:
+          - relationships:
+              to: ref('dim_product')
+              field: id
+
+      - name: sales_date
+        description: Date on which the sale occurred
+        data_type: DATE
+
+      - name: sales_year
+        description: Year in which the sale occurred
+        data_type: INTEGER
+
+      - name: quantity
+        description: Number of product sold
+        data_type: INTEGER
+
+      - name: total_amount
+        description: Total amount of the sale
+        data_type: FLOAT
+
+      - name: currency
+        description: Currency code of the sale amount
+        data_type: STRING
+
+      - name: created_at
+        description: Creation time
+        data_type: TIMESTAMP
+
+      - name: updated_at
+        description: Last update time
+        data_type: TIMESTAMP

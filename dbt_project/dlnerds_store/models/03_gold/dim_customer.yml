@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Business-ready customer data
+    columns:
+      - name: id
+        description: Unique identifier for the customer
+        data_type: STRING
+
+      - name: first_name
+        description: First name of the customer
+        data_type: STRING
+
+      - name: last_name
+        description: Last name of the customer
+        data_type: STRING
+
+      - name: gender
+        description: Gender of the customer
+        data_type: STRING
+
+      - name: date_of_birth
+        description: Date of birth of the customer
+        data_type: DATE
+
+      - name: email
+        description: Email address of the customer
+        data_type: STRING
+
+      - name: country_code
+        description: ISO code of the country
+        data_type: STRING
+
+      - name: country_name
+        description: Full name of the country
+        data_type: STRING
+
+      - name: city
+        description: City of residence of the customer
+        data_type: STRING
+
+      - name: created_at
+        description: Creation time
+        data_type: TIMESTAMP
+
+      - name: updated_at
+        description: Last update time
+        data_type: TIMESTAMP
