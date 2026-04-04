@@ -34,7 +34,6 @@
 - `{{ ... }}` resolvoes to a value directly into SQL think of sas macros
 - `{{ #... # }}` comments
 
-
     {{% macro name(args) %}}
         {{ do something}}
     {{ %endmacro% }}    
