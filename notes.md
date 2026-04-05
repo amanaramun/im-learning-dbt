@@ -94,3 +94,10 @@ sql statments in CAPS
     SELECT
         blah
     FROM source
+
+
+`git switch <branch-name>` to switch to an existing branch or git switch -c `<new-branch-name>` to create and switch to a new branch.
+
+`git branch` what branch im on?
+
+`git push -u origin <branch-name>` push with the -u (short for --set-upstream) 
