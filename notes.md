@@ -100,4 +100,4 @@ sql statments in CAPS
 
 `git branch` what branch im on?
 
-`git push -u origin <branch-name>` push with the -u (short for --set-upstream) 
+`git push -u origin <branch-name>` for first time new branches push with the -u (short for --set-upstream) 
